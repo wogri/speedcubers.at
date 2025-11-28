@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Build Hugo Site
 
 on:
   push:
@@ -21,10 +21,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --minify
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: './public'
 
   deploy:
     needs: build

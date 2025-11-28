@@ -2,6 +2,14 @@ body {
   background-color: black;
 }
 
+a {
+  color: white;
+  
+  &:visited {
+    color: white;
+  }
+}
+
 .blue-background {
   background-color: rgb(36, 91, 167);
   color: white;
@@ -10,6 +18,24 @@ body {
 .red-background {
   background-color: rgb(228, 2, 55);
   color: white;
+}
+
+.image-overlay-text {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
+  padding: 20px;
+
+  
+  @media (min-width: 572px) {
+    position: absolute;
+    top: 83px;
+    left: 60px;
+    padding: 0;
+  }
 }
 
 /*
