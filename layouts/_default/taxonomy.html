@@ -1,0 +1,18 @@
+{{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="container py-5">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="row">
+    {{ range .Pages }}
+    <div class="col-12 mb-3">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ if .Description }}
+        <p>{{ .Description }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

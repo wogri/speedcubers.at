@@ -18,6 +18,18 @@
       </div>
     </div>
   </div>
+
+  <div class="row blue-background">
+    {{ range first 6 .Site.Data.cubers.cubers }}
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="{{ .image }}" class="img-fluid mx-auto d-block my-3 px-3" alt="{{ .name }}" />
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="row red-background">
+  </div>
 </div>
+
 
 {{ end }}
