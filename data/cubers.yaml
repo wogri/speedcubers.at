@@ -1,0 +1,25 @@
+cubers:
+  - name: Anton
+    image: Anton.png
+  - name: Elias
+    image: Elias.png
+  - name: Jojo
+    image: Jojo.png
+  - name: Josef
+    image: Josef.png
+  - name: Julian
+    image: Julian.png
+  - name: Lorenz
+    image: Lorenz.png
+  - name: Lukas
+    image: Lukas.png
+  - name: Marcus
+    image: Marcus.png
+  - name: OskarH
+    image: OskarH.png
+  - name: OskarS
+    image: OskarS.png
+  - name: Paul
+    image: Paul.png
+  - name: Philipp
+    image: Philipp.png
