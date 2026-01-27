@@ -6,8 +6,8 @@
     <div class="col-12 col-lg-8 position-relative">
       <div class="image-overlay-text mt-6">
         Nächstes Treffen: <br />
-        16. Jänner 2026<br />
-        "Open Meeting"<br />
+        {{ .Site.Data.meeting.date }}<br />
+        {{ if .Site.Data.meeting.open }}"Open Meeting"<br />{{ end }}
         <a href="mailto:s.peruzzi@projektagentur.at" class="small-email">s.peruzzi@projektagentur.at</a>
       </div>
       <img src="/images/top.png" class="img-fluid w-100 d-block" alt="Speedcubers landing page" />
