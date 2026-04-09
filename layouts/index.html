@@ -53,6 +53,24 @@
 
     </div>
   </div>
+
+  <!-- News Section -->
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
+      {{ range .Site.Data.news.news }}
+      <a href="{{ .link }}" class="news-item d-flex align-items-start my-4 p-3 text-decoration-none" target="_blank" rel="noopener noreferrer">
+        <div class="news-icon me-3">
+          <i class="bi {{ .icon }}"></i>
+        </div>
+        <div>
+          <h4 class="text-white mb-2">{{ .heading }}</h4>
+          {{ with .date }}<small class="text-white-50">{{ . }}</small>{{ end }}
+          <p class="text-white mb-0">{{ .text }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
 </div>
 
 

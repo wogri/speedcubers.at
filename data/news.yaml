@@ -1,0 +1,12 @@
+news:
+  - icon: bi-instagram
+    heading: Folge uns auf Instagram
+    text: Bleib auf dem Laufenden und folge uns auf Instagram für die neuesten Updates und Highlights!
+    link: https://www.instagram.com/speedcubers.at/
+  - icon: bi-camera-video
+    heading: Fernsehbeitrag über unseren Verein
+    # date: 9. April 2026
+    text: |
+      Vielen Dank an Martin Mahringer von R9, für den tollen Beitrag über unseren Verein. 
+      Wir haben uns sehr über das Interesse gefreut!
+    link: https://www.w24.at/embed/37153
